@@ -32,12 +32,12 @@ This plugin avoids the complexity of parsing the HTML tree by instead using simp
 
 The downside is that you must format your `<link>` tag in one of the following two ways, or the plugin will not inline your CSS file:
 ```
-<link rel="stylesheet" href="css/style.css" inline>
+<link rel="stylesheet" href="/css/style.css" inline>
 - OR -
-<link rel=stylesheet href=css/style.css inline>
+<link rel=stylesheet href=/css/style.css inline>
 ```
 
-(Replace `style.css` with the name of your CSS file.)
+(Replace `/css/style.css` with the path to your CSS file relative to the output directory.)
 
 ## Example
 
