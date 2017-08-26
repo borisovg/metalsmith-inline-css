@@ -1,0 +1,22 @@
+{
+  "name": "metalsmith-inline-css",
+  "version": "1.0.0",
+  "description": "Plugin for Metalsmith to inline CSS files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borisovg/metalsmith-inline-css.git"
+  },
+  "author": "George Borisov <git@gir.me.uk>",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/borisovg/metalsmith-inline-css/issues"
+  },
+  "homepage": "https://github.com/borisovg/metalsmith-inline-css#readme",
+  "dependencies": {
+    "debug": "^3.0.1"
+  }
+}
