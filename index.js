@@ -1,4 +1,3 @@
-/*jshint node:true*/
 'use strict';
 
 /**
@@ -55,7 +54,7 @@ function plugin () {
         for (name in files) {
             if (files.hasOwnProperty(name)) {
                 if (name.match(htmlRe)) {
-                    htmlFiles.push({name: name, data: files[name]});
+                    htmlFiles.push({ name: name, data: files[name] });
                 } else if (name.match(cssRe)) {
                     cssFiles[name] = files[name];
                 }

@@ -1,4 +1,4 @@
-/*jshint node:true, mocha:true*/
+/*jshint mocha:true*/
 'use strict';
 
 /**
@@ -16,10 +16,13 @@ describe('index.js', function () {
     var contents = {
         'css/style1.css': 'body { font-size: 12px; }',
         'css/style2.css': 'body { padding: 1em; }',
+
         // tests the two different types of link definition and multiple stylesheets
         'test1.html': '<link rel="stylesheet" href="/css/style1.css" inline><link rel=stylesheet href=/css/style2.css inline>',
+
         // tests multiple unavailable stylesheets
         'test2.html': '<link rel="stylesheet" href="/css/style3.css" inline><link rel="stylesheet" href="/css/style4.css" inline>',
+
         // tests that non-matching link definition is ignored
         'test3.html': '<link rel="stylesheet" href="/css/style1.css">'
     };
