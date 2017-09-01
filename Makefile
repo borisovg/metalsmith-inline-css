@@ -22,5 +22,6 @@ test: node_modules
 help:
 	@sed -n 's/^##//p' Makefile
 
-node_modules:
-	npm install || (rm -rf node_modules; exit 1)
+node_modules: package.json
+	npm update || (rm -rf node_modules; exit 1)
+	touch node_modules

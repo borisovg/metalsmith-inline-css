@@ -17,6 +17,7 @@ example: node_modules
 help:
 	@sed -n 's/^##//p' Makefile
 
-node_modules:
+node_modules: package.json
 	@echo 'This will take a while ...'
-	npm install || (rm -rf node_modules; exit 1)
+	npm update || (rm -rf node_modules; exit 1)
+	touch node_modules
