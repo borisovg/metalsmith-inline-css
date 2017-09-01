@@ -10,7 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/borisovg/metalsmith-inline-css.git"
   },
-  "author": "George Borisov <git@gir.me.uk>",
+  "author": {
+    "name": "George Borisov",
+    "url": "https://github.com/borisovg"
+  },
   "license": "LGPL-3.0",
   "bugs": {
     "url": "https://github.com/borisovg/metalsmith-inline-css/issues"
