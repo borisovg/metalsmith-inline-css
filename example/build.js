@@ -38,7 +38,7 @@ metalsmith(__dirname)
     .use(layouts('pug'))
     .use(inlineCss())
     .use(htmlMinifier())
-    .build(function(err) {
+    .build(function (err) {
         if (err) {
             log('Build failed: %O', err);
 
