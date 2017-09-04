@@ -10,6 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/borisovg/metalsmith-inline-css.git"
   },
+  "keywords": [
+    "metalsmith",
+    "inline",
+    "css"
+  ],
   "author": {
     "name": "George Borisov",
     "url": "https://github.com/borisovg"
