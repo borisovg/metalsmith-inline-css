@@ -52,6 +52,7 @@ function plugin () {
         var i, name;
 
         for (name in files) {
+            /* istanbul ignore else*/
             if (files.hasOwnProperty(name)) {
                 if (name.match(htmlRe)) {
                     htmlFiles.push({ name: name, data: files[name] });
