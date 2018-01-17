@@ -35,7 +35,7 @@ metalsmith(__dirname)
     .use(sass({
         outputStyle: 'compressed'
     }))
-    .use(layouts('pug'))
+    .use(layouts())
     .use(inlineCss())
     .use(htmlMinifier())
     .build(function (err) {
