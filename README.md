@@ -1,3 +1,6 @@
+[![Build Status](https://img.shields.io/travis/borisovg/metalsmith-inline-css/master.svg?style=flat-square)](https://travis-ci.org/borisovg/metalsmith-inline-css/)
+[![Coverage Status](https://img.shields.io/codecov/c/github/borisovg/metalsmith-inline-css/master.svg?style=flat-square)](https://codecov.io/gh/borisovg/metalsmith-inline-css/)
+
 # metalsmith-inline-css
 
 This is a [Metalsmith](http://www.metalsmith.io/) plugin to inline CSS files.
