@@ -15,8 +15,8 @@ npm install metalsmith-inline-css
 
 Add the plugin to your Metalsmith build chain:
 ```
-var metalsmith = require('metalsmith');
-var inlineCss = require('metalsmith-inline-css');
+const metalsmith = require('metalsmith');
+const inlineCss = require('metalsmith-inline-css');
 
 metalsmith(__dirname)
     .source('./src')

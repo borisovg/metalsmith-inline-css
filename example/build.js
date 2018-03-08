@@ -1,4 +1,4 @@
-/*jshint node:true*/
+/*jshint node:true, esversion:6*/
 'use strict';
 
 /**
@@ -7,17 +7,17 @@
 * @author George Borisov <git@gir.me.uk>
 */
 
-var debug = require('debug');
-var htmlMinifier = require('metalsmith-html-minifier');
-var layouts = require('metalsmith-layouts');
-var markdown = require('metalsmith-markdown-remarkable');
-var metalsmith = require('metalsmith');
-var sass = require('metalsmith-sass');
+const debug = require('debug');
+const htmlMinifier = require('metalsmith-html-minifier');
+const layouts = require('metalsmith-layouts');
+const markdown = require('metalsmith-markdown-remarkable');
+const metalsmith = require('metalsmith');
+const sass = require('metalsmith-sass');
 
 // in real life require('metalsmith-inline-css')
-var inlineCss = require('../index.js');
+const inlineCss = require('../index.js');
 
-var log = debug('metalsmith-inline-css:example');
+const log = debug('metalsmith-inline-css:example');
 
 log('Build started');
 
