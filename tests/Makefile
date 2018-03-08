@@ -18,6 +18,7 @@ test: node_modules
 	DEBUG=metalsmith-inline-css:* ./node_modules/.bin/nyc \
 		--cwd ../ \
 		--exclude tests/** \
+		--report-dir=./tests/coverage \
 		--reporter=html \
 		--reporter=text \
 		--temp-directory ./tests/.nyc_output \
