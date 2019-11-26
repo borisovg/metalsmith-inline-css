@@ -11,7 +11,7 @@ clean:
 .PHONY: example
 example: node_modules
 	DEBUG=metalsmith-inline-css:* node build.js \
-		&& ./node_modules/.bin/opn ./public/index.html
+		&& ./node_modules/.bin/open-cli ./public/index.html
 
 .PHONY: help
 help:
