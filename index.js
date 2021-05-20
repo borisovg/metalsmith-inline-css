@@ -39,7 +39,7 @@ function parse (file, cssFiles) {
     }
 
     if (changed) {
-        file.data.contents = new Buffer(html);
+        file.data.contents = new Buffer.from(html);
     }
 }
 

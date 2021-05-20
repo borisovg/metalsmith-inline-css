@@ -36,7 +36,7 @@ describe('index.js', function () {
     for (file in contents) {
         if (contents.hasOwnProperty(file)) {
             files[file] = {
-                contents: new Buffer(contents[file]),
+                contents: new Buffer.from(contents[file]),
                 path: file
             };
         }
