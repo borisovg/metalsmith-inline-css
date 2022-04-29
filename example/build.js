@@ -9,7 +9,7 @@
 
 const debug = require('debug');
 const htmlMinifier = require('metalsmith-html-minifier');
-const layouts = require('metalsmith-layouts');
+const layouts = require('@metalsmith/layouts');
 const markdown = require('metalsmith-markdown-remarkable');
 const metalsmith = require('metalsmith');
 const sass = require('metalsmith-sass');
