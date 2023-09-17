@@ -18,10 +18,6 @@ example: node_modules
 test: node_modules
 	cd tests && make
 
-.PHONY: coverage
-coverage:
-	cd tests && make coverage
-
 .PHONY: help
 help:
 	@sed -n 's/^##//p' Makefile
