@@ -1,15 +1,15 @@
 {
   "private": true,
   "dependencies": {
-    "@metalsmith/layouts": "^2.4.0",
+    "@metalsmith/layouts": "^2.7.0",
     "debug": "^4.3.4",
     "html-minifier": "^4.0.0",
     "jstransformer-pug": "^0.4.0",
-    "metalsmith": "^2.4.2",
+    "metalsmith": "^2.6.1",
     "metalsmith-html-minifier": "^4.0.1",
-    "metalsmith-inline-css": "^1.0.9",
-    "metalsmith-markdown-remarkable": "^2.0.4",
+    "metalsmith-inline-css": "^1.0.10",
+    "metalsmith-markdown-remarkable": "^2.0.5",
     "metalsmith-sass": "^2.0.0",
-    "open-cli": "^7.0.1"
+    "open-cli": "^7.2.0"
   }
 }
