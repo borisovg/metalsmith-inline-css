@@ -1,4 +1,4 @@
-[![Build Status](https://img.shields.io/travis/borisovg/metalsmith-inline-css/master.svg?style=flat-square)](https://travis-ci.org/borisovg/metalsmith-inline-css/)
+[![Tests](https://github.com/borisovg/metalsmith-inline-css/actions/workflows/tests.yaml/badge.svg)](https://github.com/borisovg/metalsmith-inline-css/actions/workflows/tests.yaml)
 [![Coverage Status](https://img.shields.io/codecov/c/github/borisovg/metalsmith-inline-css/master.svg?style=flat-square)](https://codecov.io/gh/borisovg/metalsmith-inline-css/)
 
 # metalsmith-inline-css
