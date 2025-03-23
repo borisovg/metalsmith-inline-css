@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-inline-css",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Plugin for Metalsmith to inline CSS files.",
   "main": "index.js",
   "scripts": {
