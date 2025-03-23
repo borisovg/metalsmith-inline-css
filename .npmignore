@@ -1,6 +1,7 @@
+*.spec.*
+.github
 .js*
-.travis.yml
+coverage
 example
 local
 Makefile
-tests
