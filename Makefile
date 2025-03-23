@@ -6,7 +6,6 @@ clean:
 	rm -rf coverage node_modules
 	rm -f npm-debug.log pnpm-lock.yaml
 	cd example && make clean
-	cd tests && make clean
 
 ## example:  build example page
 .PHONY: example
@@ -16,8 +15,7 @@ example: node_modules
 ## test:     run tests
 .PHONY: test
 test: node_modules
-	pnpm c8 --reporter=none mocha --bail '*.spec.js' \
-		&& pnpm c8 report --all --clean -x example -x '*.spec.js' -x 'src/types.*' --reporter=text
+	pnpm c8 mocha --bail '*.spec.js'
 
 .PHONY: help
 help:
