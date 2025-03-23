@@ -8,11 +8,10 @@
  */
 
 const debug = require("debug");
-const htmlMinifier = require("metalsmith-html-minifier");
+const inPlace = require("@metalsmith/in-place");
 const layouts = require("@metalsmith/layouts");
-const markdown = require("metalsmith-markdown-remarkable");
 const metalsmith = require("metalsmith");
-const sass = require("metalsmith-sass");
+const sass = require("@metalsmith/sass");
 
 // in real life require('metalsmith-inline-css')
 const inlineCss = require("../index.js");
@@ -22,6 +21,7 @@ const log = debug("metalsmith-inline-css:example");
 log("Build started");
 
 metalsmith(__dirname)
+  .env("DEBUG", "metalsmith-inline-css:*")
   .metadata({
     site: {
       name: "Example Static Site",
@@ -30,8 +30,17 @@ metalsmith(__dirname)
   .source("./src")
   .destination("./public")
   .use(
-    markdown("commonmark", {
-      html: true,
+    inPlace({
+      extname: ".pug",
+      transform: "markdown-it",
+      engineOptions: {
+        html: true,
+      },
+    })
+  )
+  .use(
+    layouts({
+      transform: "pug",
     })
   )
   .use(
@@ -39,9 +48,7 @@ metalsmith(__dirname)
       outputStyle: "compressed",
     })
   )
-  .use(layouts())
   .use(inlineCss())
-  .use(htmlMinifier())
   .build(function (err) {
     if (err) {
       log("Build failed: %O", err);
