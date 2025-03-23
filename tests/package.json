@@ -1,9 +1,0 @@
-{
-  "private": true,
-  "dependencies": {
-    "chai": "^4.2.0",
-    "codecov": "^3.6.5",
-    "mocha": "^7.1.0",
-    "nyc": "^15.0.0"
-  }
-}

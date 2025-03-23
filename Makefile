@@ -3,7 +3,7 @@ all: help
 ## clean:    delete NPM packages and generated files
 .PHONY: clean
 clean:
-	rm -rf node_modules
+	rm -rf coverage node_modules
 	rm -f npm-debug.log pnpm-lock.yaml
 	cd example && make clean
 	cd tests && make clean
@@ -16,7 +16,8 @@ example: node_modules
 ## test:     run tests
 .PHONY: test
 test: node_modules
-	cd tests && make
+	pnpm c8 --reporter=none mocha --bail '*.spec.js' \
+		&& pnpm c8 report --all --clean -x example -x '*.spec.js' -x 'src/types.*' --reporter=text
 
 .PHONY: help
 help:
