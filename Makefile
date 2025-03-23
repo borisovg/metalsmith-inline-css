@@ -4,7 +4,7 @@ all: help
 .PHONY: clean
 clean:
 	rm -rf node_modules
-	rm -f npm-debug.log
+	rm -f npm-debug.log pnpm-lock.yaml
 	cd example && make clean
 	cd tests && make clean
 
@@ -23,5 +23,5 @@ help:
 	@sed -n 's/^##//p' Makefile
 
 node_modules: package.json
-	npm update || (rm -rf node_modules; exit 1)
-	touch node_modules
+	pnpm update || (rm -rf $@; exit 1)
+	touch $@
