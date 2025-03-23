@@ -8,20 +8,20 @@
  * @license LGPL-3.0
  */
 
-var debug = require("debug");
+const debug = require("debug");
 
-var debugMain = debug("metalsmith-inline-css:main");
-var debugParser = debug("metalsmith-inline-css:parser");
+const debugMain = debug("metalsmith-inline-css:main");
+const debugParser = debug("metalsmith-inline-css:parser");
 
-var linkRe = new RegExp(
+const linkRe = new RegExp(
   /<link rel="?stylesheet"? href="?\/?([\S]+\.css)"? inline>/
 );
 
 function parse(file, cssFiles) {
-  var html = file.data.contents.toString();
-  var idx = 0;
-  var match = html.match(linkRe);
-  var cssFile, changed;
+  let html = file.data.contents.toString();
+  let idx = 0;
+  let match = html.match(linkRe);
+  let cssFile, changed;
 
   while (match) {
     cssFile = cssFiles[match[1]];
@@ -49,11 +49,11 @@ function parse(file, cssFiles) {
 
 function plugin() {
   return function (files, metalsmith, done) {
-    var cssFiles = {};
-    var cssRe = new RegExp(".css$");
-    var htmlFiles = [];
-    var htmlRe = new RegExp(".html$");
-    var i, name;
+    const cssFiles = {};
+    const cssRe = new RegExp(".css$");
+    const htmlFiles = [];
+    const htmlRe = new RegExp(".html$");
+    let i, name;
 
     for (name in files) {
       /* istanbul ignore else*/
