@@ -8,7 +8,7 @@
     "jstransformer-markdown-it": "^3.0.0",
     "jstransformer-pug": "^0.4.0",
     "metalsmith": "^2.6.3",
-    "metalsmith-inline-css": "^1.0.12",
+    "metalsmith-inline-css": "^1.0.14",
     "open-cli": "^8.0.0"
   }
 }

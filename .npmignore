@@ -1,6 +1,5 @@
 *.spec.*
-.github
-.js*
+.*
 coverage
 example
 local
