@@ -9,6 +9,6 @@
     "jstransformer-pug": "^0.4.0",
     "metalsmith": "^2.6.3",
     "metalsmith-inline-css": "^1.0.14",
-    "open-cli": "^8.0.0"
+    "open-cli": "^9.0.0"
   }
 }
